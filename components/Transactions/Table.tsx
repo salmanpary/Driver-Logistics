@@ -17,7 +17,7 @@ const Table = () => {
       
   return (
     <>
-    {approvalstatus[0].selected ? <PendingApprovalCard /> : null}
+    {approvalstatus[0].selected ? <><PendingApprovalCard /><PendingApprovalCard /><PendingApprovalCard /><PendingApprovalCard /><PendingApprovalCard></PendingApprovalCard><PendingApprovalCard /><PendingApprovalCard /></> : null}
     {approvalstatus[1].selected ? <ApprovalOrRejectedCard /> : null}
     {approvalstatus[2].selected ? <PendingPodCard /> : null}
     </>

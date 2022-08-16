@@ -5,7 +5,7 @@ const ApprovalOrRejectedCard = () => {
   
 
     
-    <div className="border-2 border-grey flex justify-around items-center p-1 rounded-xl w-[1170px]">
+    <div className="border-2 border-grey flex justify-around items-center p-1 rounded-xl mt-2 gap-10 px-6">
       <div className="text-primaryblue font-bold text-lg">1</div>
       
       <img

@@ -2,7 +2,7 @@ import React from "react";
 
 const PendingApprovalCard = () => {
   return (
-    <div className="border-2 border-grey flex justify-around items-center p-1 rounded-xl w-[1170px]">
+    <div className="border-2 border-grey flex justify-around items-center p-1 rounded-xl mt-2 gap-6 px-6">
       <div className="text-primaryblue font-bold text-lg">1</div>
 
       <img
@@ -18,10 +18,10 @@ const PendingApprovalCard = () => {
       <div className="text-lg text-primaryblue">Warehouse Name</div>
       <div className="text-lg text-primaryblue">LR Number : 14215</div>
       <div className="text-lg text-primaryblue">Invoice No: 12345</div>
-      <button className="text-lg text-secondaryred border border-secondaryred px-3 py-1 rounded-lg ">
+      <button className="text-lg text-secondaryred border border-secondaryred px-3 py-1 rounded-lg hover:bg-secondaryred hover:text-white">
         Reject
       </button>
-      <button className="text-lg text-secondaryblue border border-secondaryblue px-2 py-1 rounded-lg ">
+      <button className="text-lg text-secondaryblue border border-secondaryblue px-2 py-1 rounded-lg hover:bg-secondaryblue hover:text-white">
         Approve
       </button>
     </div>

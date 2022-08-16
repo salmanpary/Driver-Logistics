@@ -3,7 +3,7 @@ import { GrLocation } from "react-icons/gr";
 import { TbBuildingWarehouse } from "react-icons/tb";
 const WarehouseCard = () => {
   return (
-    <div className="flex flex-col bg-grey p-2 gap-4 border rounded-lg border-grey">
+    <div className="flex flex-col bg-grey p-2 gap-4 border rounded-lg border-grey w-[500px] warehousecard:w-[400px] xl:max-w-[300px] ">
       <div className="flex gap-3">
         <TbBuildingWarehouse className="text-3xl " />
         <p className="grid place-items-center">Warehouse 1</p>

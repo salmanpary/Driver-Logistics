@@ -6,7 +6,7 @@ interface OptionState {
 const initialState: OptionState[] = [
   {
     name: "Transactions",
-    selected: true,
+    selected: false,
   },
   {
     name: "Warehouses",
@@ -32,7 +32,7 @@ export const optionsSlice = createSlice({
         item.selected = false;
       });
       state[1].selected = true;
-    },
+},
     selectprofile(state: OptionState[]) {
       state.forEach((item) => {
         item.selected = false;

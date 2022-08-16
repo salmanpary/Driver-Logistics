@@ -24,10 +24,17 @@ const NumberFilter = () => {
     }
   };
   const pagenumberdata = useSelector((state: any) => state.pagenumbers);
+  const increment=(item:number)=>{
+
+    PagenumberSelection(item+1)
+  }
+  const decrement=(item:number)=>{
+    PagenumberSelection(item-1)
+  }
   return (
     <div className="grid grid-cols-6 place-content-center w-72">
       <button className="bg-primaryred grid place-content-center rounded-l-md p-2">
-        <RiArrowLeftSLine className="w-8 h-8" color="white" />
+        <RiArrowLeftSLine className="w-8 h-8" color="white" onClick={()=>decrement} />
       </button>
       {[1, 2, 3, 4].map((item: number, index: number) => {
         return (
@@ -37,6 +44,7 @@ const NumberFilter = () => {
                 ? "bg-primaryblue text-white"
                 : "bg-grey text-primaryblue"
             }`}
+            key={index}
             onClick={() => PagenumberSelection(item)}
           >
             {item}
@@ -44,8 +52,8 @@ const NumberFilter = () => {
         );
       })}
 
-      <button className="bg-primaryred grid place-content-center rounded-r-lg">
-        <RiArrowRightSLine className="w-8 h-8" color="white" />
+      <button className="bg-primaryred grid place-content-center rounded-r-lg" >
+        <RiArrowRightSLine className="w-8 h-8" color="white"  />
       </button>
     </div>
   );

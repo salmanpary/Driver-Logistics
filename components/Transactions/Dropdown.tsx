@@ -33,7 +33,7 @@ const Dropdown = () => {
   };
 
   return (
-    <div className="p-10">
+    
       <div className=" inline-block relative" onClick={OpenDropdown}>
         <button className="hover:bg-opacity-90 border-2 border-grey text-primaryred font-semibold py-2 px-4 rounded-lg inline-flex items-center w-44 gap-2">
           <span className="mr-1">Filter By Status</span>
@@ -80,7 +80,7 @@ const Dropdown = () => {
           </li>
         </ul>
       </div>
-    </div>
+
   );
 };
 

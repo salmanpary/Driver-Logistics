@@ -8,6 +8,8 @@ import {
   selectwarehouses,
 } from "../../../redux/features/optionsSlice";
 import Link from "next/link";
+import { useRouter} from "next/router";
+import { useEffect } from "react";
 const OptionsMenu = () => {
   interface OptionType {
     name: string;
@@ -29,13 +31,14 @@ const OptionsMenu = () => {
   const Selectoption3 = () => {
     dispatch(selectprofile());
   };
+  const router=useRouter();
   return (
-    <div className="flex flex-col w-60  gap-1 ">
+    <div className="flex flex-col w-60  gap-1 min-w-[240px]">
       <Link href="/transactions">
     
       <button
         className={` hover:bg-primaryblue hover:text-white hover:bg-opacity-90 flex  rounded-t-lg p-3 gap-2 items-center ${
-          options[0].selected
+          options[0].selected ||router.pathname==='/transactions'
             ? "bg-primaryblue text-white scale-[101%]"
             : "text-primaryblue bg-grey"
         }`}
@@ -48,7 +51,7 @@ const OptionsMenu = () => {
       <Link href="/warehouses">
       <button
         className={`hover:bg-primaryblue hover:text-white hover:bg-opacity-90  flex  p-3 items-center gap-2 ${
-          options[1].selected
+          options[1].selected||router.pathname==='/warehouses'
             ? "bg-primaryblue text-white scale-[101%]"
             : "text-primaryblue bg-grey"
         }`}
@@ -61,7 +64,7 @@ const OptionsMenu = () => {
       <Link href="/profile">
       <button
         className={`hover:bg-primaryblue hover:text-white hover:bg-opacity-90  flex items-center rounded-b-lg p-3 gap-2 ${
-          options[2].selected
+          options[2].selected ||router.pathname==='/profile'
             ? "bg-primaryblue text-white scale-[101%]"
             : "text-primaryblue bg-grey"
         }`}

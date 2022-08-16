@@ -11,7 +11,7 @@ const SearchBar = () => {
   };
   return (
     <div
-      className={`border-2 rounded-[50px] ${iconstyle}  p-2  w-[800px] md:w-auto flex items-center cursor-pointer mx-2`}
+      className={`border-2 rounded-[50px] ${iconstyle}  p-2  w-[600px] md:w-auto flex items-center cursor-pointer mx-2 warehousecard:max-w-[450px]`}
     >
       <input
         type="text"

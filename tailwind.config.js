@@ -13,10 +13,12 @@ module.exports = {
         secondaryred: "#FE8156",
         grey: "#F3F4FC",
         orange: "#FE8156",
+        buttonred: "#FF4F5B",
       },
       screens: {
         "2xl": { max: "1536px" },
         // => @media (max-width: 1535px) { ... }
+        warehousecard: { max: "1440px" },
 
         xl: { max: "1280px" },
         // => @media (max-width: 1279px) { ... }
@@ -34,6 +36,9 @@ module.exports = {
       },
       backgroundImage: {
         "bg-image-1": "url('/loginbg.svg')",
+      },
+      boxShadow: {
+        profile: "0px 0px 5px 1px rgba(16, 15, 92, 0.25)",
       },
     },
   },
